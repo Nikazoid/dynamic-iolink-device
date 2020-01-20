@@ -1,0 +1,108 @@
+.device-port {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #ebebeb; */
+    order: -1;
+    padding: 15px 0;
+    margin: 10px 0px;
+    position: relative;
+}
+
+.device-port-connector {
+    position: absolute;
+    top: 3px;
+    background: #ffffff;
+    box-shadow: inset 0px 0px 3px #aeaeae;
+    width: 20px;
+    height: 40px;
+}
+.device-port-line {
+    position: absolute;
+    top: 17px;
+    width: 130%;
+    height: 10px;
+    background: red;
+}
+.portImage { 
+    display: flex;
+    justify-content: center;
+}
+
+.portImage img {
+    width: 50%;
+    height: auto;
+}
+
+.port-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.ledContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle-label {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.led1, .led2 {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 70px;
+    border: 2px solid #333333a1;
+}
+
+.label {
+    border: 1px solid #ebebeb;
+    padding: 5px 10px;
+}
+
+.device-box {
+    position: absolute;
+    top: -30px;
+    border: 1px solid #ebebeb;
+    width: 200px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    /* box-shadow: inset 0px 0px 15px #00000030; */
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.device-box-connector {
+    top: 35px;
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: #ffffff;
+    right: -10px;
+    border: 1px solid #dcdcdc;
+}
+
+.device-box img {
+    height: calc(100% - 10px);
+}
+
+.device-box:hover {
+    z-index: 2;
+    transform: scale(1.5);
+    box-shadow: 0 0 15px #333333;
+}
